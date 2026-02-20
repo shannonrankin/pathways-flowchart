@@ -57,14 +57,20 @@ examples <- map(examples, function(ex) {
   ex$keywords <- as.character(ex$keywords %||% character(0))
 
   # ── Image path ────────────────────────────────────────────────────────────
-  # examples.yaml stores only the filename (e.g. "my-project.png").
-  # We prefix img_folder so the browser can find the file at:
-  #   content/card-images/<filename>  →  rendered as  card-images/<filename>
-  # relative to the dashboard HTML file. Blank/missing → placeholder.
-  ex$image <- if (is.null(ex$image) || trimws(ex$image) == "") {
+  # examples.yaml accepts either:
+  #   - A bare filename:  "my-project.png"
+  #     -> prefixed with img_folder -> "card-images/my-project.png"
+  #     -> file must exist in content/card-images/
+  #   - A full external URL: "https://example.com/screenshot.png"
+  #     -> used as-is, no local file needed
+  #   - Blank / missing -> falls back to img_default (placeholder)
+  img_val <- trimws(ex$image %||% "")
+  ex$image <- if (img_val == "") {
     img_default
+  } else if (startsWith(img_val, "http://") || startsWith(img_val, "https://")) {
+    img_val
   } else {
-    paste0(img_folder, "/", trimws(ex$image))
+    paste0(img_folder, "/", img_val)
   }
 
   # Pipe-separate multi-value fields for easy OJS splitting

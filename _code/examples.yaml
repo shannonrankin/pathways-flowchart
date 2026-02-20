@@ -23,9 +23,10 @@
 #                            - r
 #                            - cloud
 #                            - template
-#   image       (string)   Filename only (e.g. my-project.png). File must
-#                          exist in content/card-images/. Leave blank ("") for
-#                          the placeholder image.
+#   image       (string)   Either a bare filename (e.g. my-project.png) stored
+#                          in content/card-images/, OR a full external URL
+#                          (e.g. https://example.com/img.png). Leave blank ""
+#                          to show the placeholder image.
 #   author      (string)   Person or organisation who created it.
 #   date_added  (string)   ISO date (YYYY-MM-DD). For internal tracking.
 #
