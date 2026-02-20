@@ -33,45 +33,37 @@ website:
     contents:
       - href: index.qmd
         text: Home
-      - section: content/LabManagement.qmd
-        contents: 
-          - href: content/Safety.qmd
-            text: Safety
-          - href: content/Inventory.qmd
-            text: Inventory
-          - href: content/Hardware.qmd
-            text: Hardware
-      - href: content/FieldMethods.qmd
-        text: "Field Methods"
-      - href: content/DataManagement.qmd
-        text: Data Management
-      - href: content/Hardware.qmd
-        text: Hardware
-      - section: content/SoftwareAnalysis.qmd
-#        text: "Software & Analysis"
-        contents: 
-          - content/Software.qmd
-          - content/AnalysisMethods.qmd
-      - href: content/Reporting.qmd
-        text: Reporting
-      - section: "Optional Pages"
-        contents: 
-          - content/SharedValues.qmd
-          - content/Onboarding.qmd
-          - content/Offboarding.qmd
-          - content/FieldMethods.qmd
-          - content/OpenScience.qmd
-          - content/PublicationsPresentations.qmd
-          - content/Resources.qmd
-      # - section: "NMFS Open Science Directions"  #Removed but did not yet delete
-      #   contents:
-      #     - content/NMFS_OpenSciDirections/Getting-Started.qmd
-      #     - content/NMFS_OpenSciDirections/organize.qmd
-      #     - content/NMFS_OpenSciDirections/add-content.qmd
-      #     - content/NMFS_OpenSciDirections/rendering.qmd
-      #     - content/NMFS_OpenSciDirections/rmarkdown.Rmd
-      #     - content/NMFS_OpenSciDirections/code.qmd
-      #     - content/NMFS_OpenSciDirections/acknowledgements.qmd 
+      - href: content/getStarted.qmd
+        text: "Get Started"
+      - section: content/flowchart-intro.qmd
+        text: "Pathways Flowchart"
+        contents:
+        - href: content/flowchart-pathways-example.qmd
+          text: "Example Flowchart"
+        - href: content/flowchart-doc2draw.qmd
+          text: "Build your Flowchart"
+        - href: content/flowchart-refine.qmd
+          text: "Refine your Flowchart"
+        - href: content/flowchart-pathways.qmd
+          text: "Customize Pathways Flowchart"
+        - href: content/flowchart-decisions.qmd
+          text: "Decision Tool"
+        - href: content/dashboard.qmd
+          text: "Example Dashboard"
+        - href: content/flowchart-getItDone.qmd
+          text: "Get It Done"
+        - href: content/dashboard-givingBack.qmd
+          text: "Giving Back"
+        - href: content/flowchart-revise.qmd
+          text: "Revise and Revisit"
+      - href: content/flowchart-transition.qmd
+        text: "Transition Your Workflow"
+      # - href: content/custom-flowchart.qmd
+      #   text: "Custom Flowcharts"
+
+resources: 
+  - output/*.svg
+  - output/*.drawio
         
 format:
   html:
@@ -86,5 +78,6 @@ format:
 filters:
   - include-files.lua
   - quarto
+
 
   
