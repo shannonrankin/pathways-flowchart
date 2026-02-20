@@ -79,6 +79,7 @@ format:
 filters:
   - include-files.lua
   - quarto
+  - content/card-images/
 
 
   
