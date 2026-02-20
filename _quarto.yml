@@ -5,8 +5,8 @@ project:
 website: 
   page-navigation: true
   title: "NOAA quarto simple" 
-  site-url: "https://nmfs-ost.github.io/PAM_template_lab_manual/" 
-  repo-url: "https://github.com/nmfs-ost/PAM_template_lab_manual"
+  site-url: "https://shannonrankin.github.io/pathways-flowchart/" 
+  repo-url: "https://github.com/shannonrankin/pathways-flowchart"
   repo-actions: [edit, source, issue]
   favicon: images/favicon.ico
   
@@ -22,11 +22,11 @@ website:
     align: center
     tools: 
       - icon: globe
-        href: https://nmfs-ost.github.io/PAM_National_NMFS_Network
-        text: "NMFS National Passive Acoustic Monitoring Network"
+        href: "https://shannonrankin.github.io/pathways-flowchart/"
+        text: "Pathways Flowchart"
       - icon: github
-        href: https://github.com/nmfs-ost/PAM_template_lab_manual
-        text: "NMFS PAM SI Lab Manual Template"
+        href: "https://github.com/shannonrankin/pathways-flowchart"
+        text: "Pathways Flowchart"
 
     style: "docked"
     search: true
@@ -65,6 +65,7 @@ website:
 resources: 
   - output/*.svg
   - output/*.drawio
+  - content/card-images/*
         
 format:
   html:
@@ -79,7 +80,7 @@ format:
 filters:
   - include-files.lua
   - quarto
-  - content/card-images/*
+
 
 
   
