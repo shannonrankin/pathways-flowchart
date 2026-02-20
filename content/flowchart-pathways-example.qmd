@@ -155,7 +155,7 @@ Click on any shape in the diagram below to open the survey panel and record your
   // CONFIGURATION
   // ============================================
   const SURVEY_PASSWORD = '`r SURVEY_PASSWORD`';
-  const DIAGRAM_PATH = '/output/`r DIAGRAM_FILE`';
+  const DIAGRAM_PATH = '../output/`r DIAGRAM_FILE`';
   
   // ============================================
   // DATA STORAGE
