@@ -41,7 +41,7 @@ For more information, see the docx_to_drawio_README in the \_code folder.
     4.  Open in draw.io to refine (see next page, Refine your Flowchart).
 
 ```{r docx2drawio}
-#| include: FALSE
+#| output: FALSE
 library(here)
 source(here::here("_code/docx_to_drawio.R"))
 path_to_docx <- here("output/SampleDataPlan.docx")
