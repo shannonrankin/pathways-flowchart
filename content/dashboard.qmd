@@ -15,7 +15,7 @@ execute:
   warning: false
   message: false
 ---
-
+Need Instructions? [Here you go!](https://shannonrankin.github.io/pathways-flowchart/content/instructions.html)
 ```{r}
 #| label: load-data
 
