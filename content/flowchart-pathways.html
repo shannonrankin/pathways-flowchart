@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Interactive Workflow Tool – NOAA quarto simple</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -29,24 +35,23 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/flowchart-decisions.html" rel="next">
-<link href="../content/flowchart-refine.html" rel="prev">
+<link href="../content/template1.qmd" rel="next">
+<link href="../content/survey-prep.html" rel="prev">
 <link href="../images/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3550a960a4b72f8d05ec85c7b3398cde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-d5b445d784f0591cd0cfe4f4230be6b8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-3550a960a4b72f8d05ec85c7b3398cde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ded9b121a6a3b93af849dfaa72d0764d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-31af0bfc70550b3e7a18d4c5c75eb64a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-ded9b121a6a3b93af849dfaa72d0764d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -249,7 +254,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/flowchart-intro.html">Pathways Flowchart</a></li><li class="breadcrumb-item"><a href="../content/flowchart-pathways.html">Customize Pathways Flowchart</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/flowchart-intro.html">Practice Flowchart</a></li><li class="breadcrumb-item"><a href="../content/flowchart-pathways.html">Customize Pathways Flowchart</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -295,7 +300,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../content/flowchart-intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Pathways Flowchart</span></a>
+ <span class="menu-text">Practice Flowchart</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -321,46 +326,22 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../content/survey-prep.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prepare for Flowchart Survey</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../content/flowchart-pathways.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Customize Pathways Flowchart</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/flowchart-decisions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Decision Tool</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/dashboard.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Example Dashboard</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/flowchart-getItDone.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Get It Done</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/dashboard-givingBack.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Giving Back</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/flowchart-revise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Revise and Revisit</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/flowchart-transition.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Transition Your Workflow</span></a>
+  <a href="../content/template1.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Template1</span></a>
   </div>
 </li>
     </ul>
@@ -386,7 +367,7 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/flowchart-intro.html">Pathways Flowchart</a></li><li class="breadcrumb-item"><a href="../content/flowchart-pathways.html">Customize Pathways Flowchart</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/flowchart-intro.html">Practice Flowchart</a></li><li class="breadcrumb-item"><a href="../content/flowchart-pathways.html">Customize Pathways Flowchart</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Interactive Workflow Tool</h1>
 </div>
@@ -437,30 +418,74 @@ ul.task-list li input[type="checkbox"] {
       </div>
       
       <div class="form-group">
-        <label for="Status">Question 1: What is the current level of automation?</label>
-        <select id="Status" required="">
+        <label for="pre-si-status">
+        Question 1: What was the capability BEFORE the PAM-SI (2023)?</label>
+        <select id="pre-si-status" required="">
           <option value="">-- Select --</option>
-          <option value="Not Started">Not Started</option>
-          <option value="In Progress">In Progress</option>
-          <option value="Completed">Completed</option>
-          <option value="Not Applicable">Not Applicable</option>
+          <option value="Proof of Concept">proof-of-concept</option>
+          <option value="Pilot Study">pilot-study</option>
+          <option value="Potentially Operational">potential-operational</option>
+          <option value="Operational">operational</option>
+          <option value="Not Applicable">NA</option>
         </select>
       </div>
       
       <div class="form-group">
-        <label for="Potential">Question 2: What is the potential for Automation?</label>
-        <select id="Potential" required="">
+        <label for="status">
+        Question 2: What is the current capability?</label>
+        <select id="status" required="">
+          <option value="">-- Select --</option>
+          <option value="Proof of Concept">proof-of-concept</option>
+          <option value="Pilot Study">pilot-study</option>
+          <option value="Potentially Operational">potential-operational</option>
+          <option value="Operational">operational</option>
+          <option value="Not Applicable">NA</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="pre-si-automation">
+        Question 3: What was the level for Automation BEFORE the PAM-SI?</label>
+        <select id="pre-si-automation" required="">
           <option value="">-- Select --</option>
           <option value="Low">Low</option>
           <option value="Medium">Medium</option>
           <option value="High">High</option>
           <option value="Unknown">Unknown</option>
+          <option value="Not Applicable">NA</option>
         </select>
       </div>
       
       <div class="form-group">
-        <label for="PainPoint">Question 3: How painful is the current process?</label>
-        <select id="PainPoint" required="">
+        <label for="current-automation">
+        Question 4: What is the current level of Automation?</label>
+        <select id="current-automation" required="">
+          <option value="">-- Select --</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+          <option value="Unknown">Unknown</option>
+          <option value="Not Applicable">NA</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="potential-automation">
+        Question 5: What is the POTENTIAL for Automation?</label>
+        <select id="potential-automation" required="">
+          <option value="">-- Select --</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+          <option value="Unknown">Unknown</option>
+          <option value="Not Applicable">NA</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="pain-point">
+        Question 6: How painful is the current process?</label>
+        <select id="pain-point" required="">
           <option value="">-- Select --</option>
           <option value="All Good">All Good</option>
           <option value="Room for Improvement">Room for Improvement</option>
@@ -470,26 +495,56 @@ ul.task-list li input[type="checkbox"] {
       </div>
       
       <div class="form-group">
-        <label for="Concern">Question 4: How concerned are you with modifying this task?</label>
-        <select id="Concern" required="">
-          <option value="">-- Select --</option>
-          <option value="No Concern">No Concern</option>
-          <option value="Moderate Concern">Moderate Concern</option>
-          <option value="Terrified">Terrified</option>
-          <!-- <option value="Insufficient">Insufficient</option> -->
-        </select>
+        <label for="barriers">Question 7: Identify primary barriers to success and/or efficiency?</label>
+        <input type="text" id="barriers" name="barriers"><br><br>
       </div>
       
       <div class="form-group">
-        <label for="Proficiency">Question 5: What is your level of proficiency with task automation?</label>
-        <select id="Proficiency" required="">
+        <label for="needs">Question 8: What is needed to address barriers and improve success and/or efficiency?</label>
+        <input type="text" id="needs" name="needs"><br><br>
+        
+      </div>
+      
+      <div class="form-group">
+        <label for="pre-si-operating-model">
+        Question 9: What was the operating model BEFORE the PAM-SI (2023)?</label>
+        <select id="pre-si-operating-model" name="pre-si-operating-model" multiple="" required="" size="4">
           <option value="">-- Select --</option>
-          <option value="Very Low">Very Low</option>
-          <option value="Low">Low</option>
-          <option value="Medium">Medium</option>
-          <option value="Medium-Strong">Medium-Strong</option>
-          <option value="Strong">Strong</option>
+          <option value="Center-Run">center</option>
+          <option value="Regional Hub">regional</option>
+          <option value="National/Centralized">national</option>
+          <option value="Outsourced">Unknown</option>
         </select>
+      </div>     
+      
+        <div class="form-group">
+        <label for="current-operating-model">
+        Question 10: What is the current operating model?</label>
+        <select id="current-operating-model" name="current-operating-model" multiple="" required="" size="4">
+          <option value="">-- Select --</option>
+          <option value="Center-Run">center</option>
+          <option value="Regional Hub">regional</option>
+          <option value="National/Centralized">national</option>
+          <option value="Outsourced">Unknown</option>
+        </select>
+      </div>
+      
+        <div class="form-group">
+        <label for="ideal-operating-model">
+        Question 11: What is the ideal operating model?</label>
+        <select id="ideal-operating-model" name="ideal-operating-model" multiple="" required="" size="4">
+          <option value="">-- Select --</option>
+          <option value="Center-Run">center</option>
+          <option value="Regional Hub">regional</option>
+          <option value="National/Centralized">national</option>
+          <option value="Outsourced">Unknown</option>
+        </select>
+      </div>
+      
+        <div class="form-group">
+        <label for="need-for-ideal-model">Question 12: What is needed achieve an ideal operating model?</label>
+        <input type="text" id="need-for-ideal-model" name="need-for-ideal-model"><br><br>
+        
       </div>
       
       <button type="submit" class="submit-btn">Submit Response</button>
@@ -523,8 +578,8 @@ ul.task-list li input[type="checkbox"] {
   // ============================================
   // CONFIGURATION
   // ============================================
-  const SURVEY_PASSWORD = 'workflow2024';
-  const DIAGRAM_PATH = '../output/OSworkflow.svg';
+  const SURVEY_PASSWORD = 'pam2026';
+  const DIAGRAM_PATH = '../output/PAM_workflow.svg';
   
   // ============================================
   // DATA STORAGE
@@ -1284,13 +1339,13 @@ link.addEventListener('click', function(e) {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../content/flowchart-refine.html" class="pagination-link" aria-label="Refine your Flowchart">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Refine your Flowchart</span>
+      <a href="../content/survey-prep.html" class="pagination-link" aria-label="Prepare for Flowchart Survey">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Prepare for Flowchart Survey</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../content/flowchart-decisions.html" class="pagination-link" aria-label="Decision Tool">
-        <span class="nav-page-text">Decision Tool</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../content/template1.qmd" class="pagination-link" aria-label="Template1">
+        <span class="nav-page-text">Template1</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

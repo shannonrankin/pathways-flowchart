@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Working with Workflows – NOAA quarto simple</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -34,19 +40,18 @@ ul.task-list li input[type="checkbox"] {
 <link href="../images/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3550a960a4b72f8d05ec85c7b3398cde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-d5b445d784f0591cd0cfe4f4230be6b8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-3550a960a4b72f8d05ec85c7b3398cde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ded9b121a6a3b93af849dfaa72d0764d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-31af0bfc70550b3e7a18d4c5c75eb64a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-ded9b121a6a3b93af849dfaa72d0764d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -249,7 +254,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/flowchart-intro.html">Pathways Flowchart</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/flowchart-intro.html">Practice Flowchart</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -295,7 +300,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../content/flowchart-intro.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Pathways Flowchart</span></a>
+ <span class="menu-text">Practice Flowchart</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -321,46 +326,22 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../content/survey-prep.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prepare for Flowchart Survey</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../content/flowchart-pathways.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Customize Pathways Flowchart</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/flowchart-decisions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Decision Tool</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/dashboard.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Example Dashboard</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/flowchart-getItDone.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Get It Done</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/dashboard-givingBack.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Giving Back</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/flowchart-revise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Revise and Revisit</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/flowchart-transition.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Transition Your Workflow</span></a>
+  <a href="../content/template1.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Template1</span></a>
   </div>
 </li>
     </ul>
@@ -373,7 +354,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#why-a-pathway-flowchart" id="toc-why-a-pathway-flowchart" class="nav-link active" data-scroll-target="#why-a-pathway-flowchart">Why a ‘Pathway Flowchart’?</a></li>
+  <li><a href="#why-a-pam-workflow-flowchart" id="toc-why-a-pam-workflow-flowchart" class="nav-link active" data-scroll-target="#why-a-pam-workflow-flowchart">Why a ‘PAM Workflow Flowchart’?</a></li>
   <li><a href="#what-do-i-need-to-start" id="toc-what-do-i-need-to-start" class="nav-link" data-scroll-target="#what-do-i-need-to-start">What do I need to Start?</a></li>
   <li><a href="#then-what" id="toc-then-what" class="nav-link" data-scroll-target="#then-what">Then what?</a></li>
   </ul>
@@ -402,17 +383,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="why-a-pathway-flowchart" class="level2">
-<h2 class="anchored" data-anchor-id="why-a-pathway-flowchart">Why a ‘Pathway Flowchart’?</h2>
+<section id="why-a-pam-workflow-flowchart" class="level2">
+<h2 class="anchored" data-anchor-id="why-a-pam-workflow-flowchart">Why a ‘PAM Workflow Flowchart’?</h2>
 <div class="columns">
 <div class="column" style="width:40%;">
-<p>For many, creating a diagram of your workflow is an intuitive approach to identifying the parts of the process, and from there we can start to think about how to transition those parts into an open source framework. If this approach feels right for you, then this template serves to simplify this adoption in an open source way.</p>
-<p>Sure, you can sketch your workflow on a piece of paper, but by following this process, you will learn skills, and the diagrams you develop can be integrated into your developing open source framework. Ultimately, do what is best for you, but know this template is here for you to follow.</p>
+<p>For many, creating a diagram of your workflow is an intuitive approach to identifying the parts of the process, and from there we can start to think about information related to each of these workflow components (status, methods, POC, etc).</p>
 </div><div class="column" style="width:60%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/OSworkflow.jpg" class="img-fluid figure-img" width="385"></p>
-<figcaption>Workflow diagram for creating the Pathway Flowchart project. This project will create interactive diagrams that facilitate a visual representation of your workflow and the process of incremental adoption of an open science framework for each component of your workflow.</figcaption>
+<figcaption>Workflow diagram for creating the Pathway Flowchart project. This project will create interactive diagrams that facilitate a visual representation of your workflow and allow you to assign metadata to each workflow component.</figcaption>
 </figure>
 </div>
 </div>
@@ -421,19 +401,17 @@ ul.task-list li input[type="checkbox"] {
 <section id="what-do-i-need-to-start" class="level2">
 <h2 class="anchored" data-anchor-id="what-do-i-need-to-start">What do I need to Start?</h2>
 <p>You will need to work in R/Quarto (RStudio or Positron) and Github. We also recommend Github Desktop to facilitate working locally and saving to the cloud (github). If you are new, we recommend the <a href="https://rverse-tutorials.github.io/PSAW-2022/">PSAW 2022 R/Github Training Sessions</a> to get started.</p>
+<p>If you need help, join the PAM-Community Co-working Meetings.</p>
 </section>
 <section id="then-what" class="level2">
 <h2 class="anchored" data-anchor-id="then-what">Then what?</h2>
 <ol type="1">
-<li><p><strong>Getting Started:</strong> Create your own Pathways Repo by saving this template to your own Github Repo</p></li>
+<li><p><strong>Getting Started:</strong> Create your own Workflow Repo (one per science center)</p></li>
+<li><p><strong>Create Individual Flowcharts:</strong> Create a flowchart page for each individual workflow.</p></li>
 <li><p><strong>Flowchart Build:</strong> Build a Flowchart using your existing documentation and/or the draw.io web application</p></li>
-<li><p><strong>Flowchart Refine:</strong> Refine your flowchart and prepare for Pathways Flowchart</p></li>
-<li><p><strong>Pathways Flowchart:</strong> Compile surveys for your Pathways Flowchart</p></li>
-<li><p><strong>Decision Tool:</strong> The decision tool will evaluate your pathways survey responses to identify workflow components for prioritization.</p></li>
-<li><p><strong>Open Science Dashboard:</strong> Use keywords to find a template to use or an example to fork. Cheating is Encouraged!</p></li>
-<li><p><strong>Get it Done:</strong> Work on your project! This is independent of the Pathways Flowchart, but we encourage you to find a community to help you tackle your goals.</p></li>
-<li><p><strong>Giving Back:</strong> If your project can serve as a good example or if it has new ways of solving a problem, we encourage you to share it as an example for others to consider!</p></li>
-<li><p><strong>Revise and Revisit:</strong> Revise and Revisit your workflow, and move onto the next project!</p></li>
+<li><p><strong>Flowchart Refine:</strong> Refine your flowchart (draw.io)</p></li>
+<li><p><strong>PAM Flowchart:</strong> Comlete PAM-SI surveys for your PAM workflow Flowchart</p></li>
+<li><p><strong>Share Results:</strong> Reach out to shannon.rankin@noaa.gov to learn how to submit your results.</p></li>
 </ol>
 <p>Follow the button on the bottom right to get started (or follow the process using the left sidebar)</p>
 

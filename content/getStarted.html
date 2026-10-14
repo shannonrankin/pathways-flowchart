@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Getting Started – NOAA quarto simple</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -34,19 +40,18 @@ ul.task-list li input[type="checkbox"] {
 <link href="../images/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3550a960a4b72f8d05ec85c7b3398cde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-d5b445d784f0591cd0cfe4f4230be6b8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-3550a960a4b72f8d05ec85c7b3398cde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ded9b121a6a3b93af849dfaa72d0764d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-31af0bfc70550b3e7a18d4c5c75eb64a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-ded9b121a6a3b93af849dfaa72d0764d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -295,7 +300,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../content/flowchart-intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Pathways Flowchart</span></a>
+ <span class="menu-text">Practice Flowchart</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -321,46 +326,22 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../content/survey-prep.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prepare for Flowchart Survey</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../content/flowchart-pathways.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Customize Pathways Flowchart</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/flowchart-decisions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Decision Tool</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/dashboard.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Example Dashboard</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/flowchart-getItDone.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Get It Done</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/dashboard-givingBack.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Giving Back</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/flowchart-revise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Revise and Revisit</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/flowchart-transition.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Transition Your Workflow</span></a>
+  <a href="../content/template1.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Template1</span></a>
   </div>
 </li>
     </ul>
@@ -374,6 +355,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#how-to-use-this-template" id="toc-how-to-use-this-template" class="nav-link active" data-scroll-target="#how-to-use-this-template">How To Use This Template</a></li>
+  <li><a href="#create-flowchart-pages-for-each-workflow" id="toc-create-flowchart-pages-for-each-workflow" class="nav-link" data-scroll-target="#create-flowchart-pages-for-each-workflow">Create Flowchart Pages for each Workflow</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/shannonrankin/pathways-flowchart/edit/main/content/getStarted.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/shannonrankin/pathways-flowchart/blob/main/content/getStarted.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/shannonrankin/pathways-flowchart/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -402,7 +384,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="how-to-use-this-template" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-use-this-template">How To Use This Template</h2>
-<p>This template will create a Github Repository standard folders and embedded flowcharts and the foundation for a Quarto website that can serve as a tool for navigating your Openscapes Pathways, a Lab Manual with embedded flowcharts, or as an experimental repository.</p>
+<p>Use this template to create a copy of this repository for your own science center. Once you create your own version, you can then get to work!</p>
 <p>Follow the steps below to copy this template to your lab’s GitHub</p>
 <ol type="1">
 <li><p>Open [this repository on GitHub]</p></li>
@@ -411,8 +393,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Edit repository settings</p>
 <ul>
 <li><p>Select the ‘Include all branches’ option</p></li>
-<li><p>Select your lab organization or yourself as the owner and set the repository name to your <strong><em>Project Name</em></strong></p></li>
-<li><p>Make description “Research Compendium for <strong><em>Project Name</em></strong>”</p></li>
+<li><p>Select your lab organization or yourself as the owner and append the name with the initials of your science center (ex “_SWFSC”)</p></li>
+<li><p>Make description “PAM Workflows for <strong><em>Project Name</em></strong>”</p></li>
 <li><p>Make the repo public</p>
 <p><img src="images/RepoSettings.png" class="img-fluid"></p></li>
 </ul></li>
@@ -448,6 +430,21 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/website.png" class="img-fluid"></p></li>
 </ul></li>
 <li><p>The foundation for your project is now created! We recommend that you first modify the ReadMe to add your Project Name in the appropriate places.</p></li>
+</ol>
+</section>
+<section id="create-flowchart-pages-for-each-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="create-flowchart-pages-for-each-workflow">Create Flowchart Pages for each Workflow</h2>
+<p>You will need a separate flowchart page for each workflow:</p>
+<ol type="1">
+<li><p>Identify each workflow, and give it a simple name.</p></li>
+<li><p>Create a copy of the content/flowchart.qmd for each workflow, and rename it by appending with the simplename. Use snake-case</p></li>
+<li><p>Add this page name to the _quarto.yml</p></li>
+<li><p>Are there any changes that need to be made to the csv or other to ensure things do not overwrite each other???</p>
+<ol type="1">
+<li><p>Change name for diagram from “PAM_workflow.svg” to the simplename of the specific workflow.</p>
+<p><img src="images/workflow-tool-config.png" class="img-fluid"></p></li>
+<li><p>xx</p></li>
+</ol></li>
 </ol>
 
 
@@ -874,8 +871,8 @@ ul.task-list li input[type="checkbox"] {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../content/flowchart-intro.html" class="pagination-link" aria-label="Pathways Flowchart">
-        <span class="nav-page-text">Pathways Flowchart</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../content/flowchart-intro.html" class="pagination-link" aria-label="Practice Flowchart">
+        <span class="nav-page-text">Practice Flowchart</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
