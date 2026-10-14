@@ -1,0 +1,209 @@
+---
+title: "Survey Preparation"
+format: html
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+Please see the descriptions below to help you best answer the survey
+questions.
+
+### username
+
+Please have the Point of Contact provide their name (preferred
+firstname.lastname) \### password The temporary password is pamsi2026
+
+## Question 1: What was the capability BEFORE the PAM-SI (2023)?
+
+***Drop-down selections:*** Proof of Concept, Pilot Study, Potentially
+Operational, Operational, Not Applicable
+
+This question relates to this specific COMPONENT of the workflow.
+
+- ***Proof of Concept:*** a small scale demonstration showing
+  feasability
+
+- ***Pilot Study:*** study in real-world conditions
+
+- ***Potentially Operational:*** successful implementation of pilot
+  study, or implementation in other related studies. Shows potential for
+  operationalization but not yet operational.
+
+- ***Operational:*** used operationally
+
+- ***Not Applicable:*** no capabilities
+
+***Why?*** We want to reflect on the impact the PAM Strategic Initiative
+had on the improvement of different components of our workflow and
+across the different science centers.
+
+## Question 2: What is the current capability?
+
+***Drop-down selections:*** Proof of Concept, Pilot Study, Potentially
+Operational, Operational, Not Applicable
+
+This question relates to this specific COMPONENT of the workflow (see
+descriptions from Q1).
+
+***Why?*** We want to understand the current capabilities of components
+of our workflow and across the different science centers. This will help
+us prioritize investment.
+
+## Question 3: What was the level for Automation BEFORE the PAM-SI?
+
+***Drop-down selections:*** Low, Medium, High, Unknown, Not Applicable
+
+This question relates to this specific COMPONENT of the workflow:
+
+- ***Low:*** Little or no automation (largely manual effort)
+
+- ***Medium:*** Moderate level of automation but with one or more areas
+  requiring significant manual effort)
+
+- ***High:*** Significant levels of automation with low levels of manual
+  effort required
+
+- ***Unknown:*** Only use this if it is truly unknown
+
+- ***Not Applicable:*** There is little/no potential for automation of
+  this workflow component.
+
+***Why?*** We want to reflect on the impact the PAM Strategic Initiative
+had on the improvement of different components of our workflow and
+across the different science centers.
+
+## Question 4: What is the current level of Automation?
+
+***Drop-down selections:*** Low, Medium, High, Unknown, Not Applicable
+
+This question relates to this specific COMPONENT of the workflow (see
+descriptions from Q3).
+
+***Why?*** We want to understand the current level of automation of
+components of our workflow and across the different science centers.
+This will help us understand the impact the PAM-SI investment had on
+automation and will also help us prioritize future investment.
+
+## Question 5: What is the POTENTIAL for Automation?
+
+***Drop-down selections:*** Low, Medium, High, Unknown, Not Applicable
+
+This question relates to this specific COMPONENT of the workflow (see
+descriptions from Q3).
+
+***Why?*** We want to understand the potential for automation of
+components of our workflow and across the different science centers.
+This will help us prioritize future investment.
+
+## Question 6: How painful is the current process?
+
+***Drop-down selections:*** All Good, Room for Improvement, Painful!,
+Blocked
+
+This question relates to this specific COMPONENT of the workflow:
+
+- ***All Good:*** This workflow component is highly functional and
+  requires little more than minor improvements
+
+- ***Room for Improvement:*** This workflow component functions, but
+  there is still significant room for improvement
+
+- ***Painful!:*** This process functions but has significant 'pain
+  points' (large or small) that lead to high (or unneccesary) levels of
+  frustration
+
+- ***Blocked:*** This workflow component is important/needed but either
+  does not exist or is not functional
+
+***Why?*** Understanding pain points helps us identify critical
+components of our workflow that are negatively impacting not only our
+success and efficiency, but also our morale. For example, some process
+may appear to be efficient (highly automated), but there may be
+frustrating small barriers that have an out-sized impact. This will help
+us prioritize future investment.
+
+## Question 7: Identify primary barriers to success and/or efficiency? (Text)
+
+Please provide descriptions of barriers that negatively impact this
+workflow component (just describe the problem here, save potential
+solutions for the next question). This question relates to this specific
+COMPONENT of the workflow.
+
+***Why?*** We need to understand barriers (large and small) that are
+negatively impacting our success and efficiency. Please provide
+sufficient information for us to understand the barriers as you see
+them. We only need to identify the barriers here.
+
+## Question 8: What is needed to address barriers and improve success and/or efficiency? (Text)
+
+Please provide information to help identify and define possible
+solutions to existing barriers. This can include (but is not limited to)
+ideas, links to potential solutions (research articles, software, etc),
+understanding the scope of the need, etc. This question relates to this
+specific COMPONENT of the workflow.
+
+***Why?*** We welcome any information that will help us identify and
+implement possible solutions to address identified barriers.
+
+## Question 9: What was the operating model BEFORE the PAM-SI (2023)?
+
+***Drop-down selections:*** Center-Run, Regional Hub,
+National/Centralized, Outsourced
+
+This question relates to this specific COMPONENT of the workflow. An
+'Operating Model' is how this component is developed & maintained. Many
+workflow components require a combination of efforts. Users can select
+more than one operating model, if appropriate.
+
+- ***National/Centralized:*** a centralized body develops and maintains
+  this workflow component.
+
+- ***Regional Hub:*** Development, assets, and technical staff are
+  shared to support shared regional missions.
+
+- ***Center-run:*** Niche components or thos with a deep expertise
+  legacy may be developed, maintained, and implemented at a local
+  center-run level.
+
+- ***Outsourced:*** NMFS focuses on needs/specifications and outsources
+  the work attributed to this workflow component.
+
+***Why?*** We want to reflect on the impact the PAM Strategic Initiative
+had on the improvement of different components of our workflow and
+across the different science centers.
+
+## Question 10: What is the current operating model?
+
+***Drop-down selections:*** Center-Run, Regional Hub,
+National/Centralized, Outsourced
+
+This question relates to this specific COMPONENT of the workflow (see
+descriptions from Q9).
+
+***Why?*** We'd like to understand the current operating model,
+especially as it relates to the operating model used before the PAM-SI
+and as it relates to the ideal operating model.
+
+## Question 11: What is the ideal operating model?
+
+***Drop-down selections:*** Center-Run, Regional Hub,
+National/Centralized, Outsourced
+
+This question relates to this specific COMPONENT of the workflow (see
+descriptions from Q9).
+
+***Why?*** By understanding the user-defined 'ideal' operating model,
+this can help us areas where we need to expend effort to centralize
+effort for a more national strategy.
+
+## Question 12: What is needed achieve an ideal operating model? (Text)
+
+Describe potential modifications to the way we work that you think would
+help us achieve an ideal operational model.
+
+***Why?*** We understand that each team will have a different idea for
+ways we can work together (nationally and/or regionally) as well as ways
+in which teams prefer to operate independently. These answers will help
+teams think about what they think is an ideal way to work, which will
+help us identify the ways in which we need to come together.

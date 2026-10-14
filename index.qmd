@@ -1,53 +1,37 @@
 ---
 title: "Home"
-subtitle: "Pathways to Adopting Open Science"
+subtitle: "PAM Workflows"
 page-layout: full
 ---
 
-![](content/images/under-construction.png)
+## PAM Workflows
 
-## Openscapes Pathways
+PAM workflows are COMPLEX, and while many components of these workflows are efficient or highly automated, many workflows contain points of high friction. As we transition from a PAM Strategic Initiative to operational National PAM Program, we need to understand and streamline the complete PAM workflows from data collection to management products. We also need to identify and prioritize alleviating points of friction along our high value workflows.
 
-[Openscapes](openscapes.org) is an open source approach and movement that helps researchers do better science, together. The Openscapes Champions Program is an open data science mentorship program for science teams, and it begins by identifying an individual or teams' 'Pathway'. The Pathways concept identifies how work is currently being done, and where they would like to go in the future with respect to reproducibility, collaboration, communication, and culture. This first step traditionally begins with a self-assessment using a [spreadsheet template](https://docs.google.com/spreadsheets/d/1rmhOly87OYrPOUqTzmccYbPrTlGmXGsN06GI1FKzxag/edit?usp=sharing).
+In preparation for our PAM-SI meeting (February 1-5, 2027), we will need ALL science center PAM teams to develop workflows and metadata for their high priority workflows.
 
-:::::: columns
-::: {.column width="40%"}
-![Navigating the landscape of our scientific journey; Openscapes encourages identifying common needs and working with teams to navigate the landscape.](content/images/Openscapes-cartoon-diagram-Allison-Horst_2.jpg)
-:::
+## Improving High Value Workflows
 
-::: {.column width="10%"}
-<!-- spacer -->
-:::
+We have developed user-friendly tools to minimize the effort required to develop your PAM Workflows (and necessary metadata) and to maximize the utility of this effort for your own needs.
 
-::: {.column width="40%"}
-![Example of spreadsheet approach to identifying the components of your path, from where you are now, to where you want to go.](content/images/pathway-example.png)
-:::
-::::::
+The initial goals of the PAM Workflow are to:
 
-For those new to open science and with limited exposure to alternative scientific cultures or ways of doing science, it can be difficult to identify what exactly you want and need. By the end of the Openscapes Champions Program, this vision of these alternatives become clear and these initial projects frequently include developing a Lab Manual (a one-stop shop for everything) or automation of part of their workflow to improve reproducibility. T
+- Create a visual representation for each of your high value workflows (Flowchart)
 
-## Pathways Flowchart
+- Evaluate current state for each workflow component
 
-The Pathways Flowchart was developed as an alternative approach to the Openscapes Pathways Spreadsheet to reduce decision-related friction and identify priority projects for automation. This approach is more complicated to initiate than the spreadsheet, but it offers great flexibility and utility. With good documentation, this approach should facilitate adoption of streamlined open science methods while learning (and reinforcing) open science methods.
+- Identify barriers and needs for improvement
 
-The goals of the Pathways Flowchart are to:
+- We encourage you to create these for ALL your workflows, but the PAM-SI will need these for high-value workflows.
 
--   Create a visual representation of your workflow (Flowchart)
+- We will provide training & help during the PAM Community Co-working sessions.
 
--   Evaluate the potential for streamlining/automation of each component
+Next Steps:
 
--   Prioritize components for improvement
+- Cross-Center Workflow Teams: teams with similar workflows will meet prior to the PAM-SI meeting to synthesize their results, identify points of friction, and provide information to support solutions to address these frictions points.
 
--   Identify templates and examples to facilitate these improvements
+- Adaptation of workflows for personal use. We will provide instructions/training for teams to adapt these workflows to meet their needs.
 
--   Encourage a return to the Flowchart to revise and re-evaluate to identify the next priority for improvement
-
--   Encourage viewing this as an iterative process, improving one component at a time
-
--   Encourage sharing developments as part of the Open Science process
-
--   Provide alternative uses of these flowcharts to serve other data science needs
-
-This work emphasizes the iteritive nature of this process, helping users identify workflow components in a flowchart, identifying their potential for automation, and prioritizing projects based on experience, need, and potential.
+- PAM-SI meeting: We will spend a day discussing these current state of workflows and how they can be improved.
 
 ![Workflow diagram for creating the Pathway Flowchart project. This project will create interactive diagrams that facilitate a visual representation of your workflow and the process of incremental adoption of an open science framework for each component of your workflow.](content/images/OSworkflow.jpg){width="617"}

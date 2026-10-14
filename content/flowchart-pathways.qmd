@@ -13,8 +13,8 @@ library(here)
 # ============================================
 # CONFIGURATION - EDIT THESE VALUES
 # ============================================
-SURVEY_PASSWORD <- "workflow2024"  # Change this to your desired password
-DIAGRAM_FILE <- "OSworkflow.svg"   # Your SVG diagram filename
+SURVEY_PASSWORD <- "pam2026"  # Change this to your desired password
+DIAGRAM_FILE <- "PAM_workflow.svg"   # Your SVG diagram filename
 ```
 
 ## Interactive Workflow Diagram
@@ -51,30 +51,74 @@ Click on any shape in the diagram below to open the survey panel and record your
       </div>
       
       <div class="form-group">
-        <label for="Status">Question 1: What is the current level of automation?</label>
-        <select id="Status" required>
+        <label for="pre-si-status">
+        Question 1: What was the capability BEFORE the PAM-SI (2023)?</label>
+        <select id="pre-si-status" required>
           <option value="">-- Select --</option>
-          <option value="Not Started">Not Started</option>
-          <option value="In Progress">In Progress</option>
-          <option value="Completed">Completed</option>
-          <option value="Not Applicable">Not Applicable</option>
+          <option value="Proof of Concept">proof-of-concept</option>
+          <option value="Pilot Study">pilot-study</option>
+          <option value="Potentially Operational">potential-operational</option>
+          <option value="Operational">operational</option>
+          <option value="Not Applicable">NA</option>
         </select>
       </div>
       
       <div class="form-group">
-        <label for="Potential">Question 2: What is the potential for Automation?</label>
-        <select id="Potential" required>
+        <label for="status">
+        Question 2: What is the current capability?</label>
+        <select id="status" required>
+          <option value="">-- Select --</option>
+          <option value="Proof of Concept">proof-of-concept</option>
+          <option value="Pilot Study">pilot-study</option>
+          <option value="Potentially Operational">potential-operational</option>
+          <option value="Operational">operational</option>
+          <option value="Not Applicable">NA</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="pre-si-automation">
+        Question 3: What was the level for Automation BEFORE the PAM-SI?</label>
+        <select id="pre-si-automation" required>
           <option value="">-- Select --</option>
           <option value="Low">Low</option>
           <option value="Medium">Medium</option>
           <option value="High">High</option>
           <option value="Unknown">Unknown</option>
+          <option value="Not Applicable">NA</option>
         </select>
       </div>
       
       <div class="form-group">
-        <label for="PainPoint">Question 3: How painful is the current process?</label>
-        <select id="PainPoint" required>
+        <label for="current-automation">
+        Question 4: What is the current level of Automation?</label>
+        <select id="current-automation" required>
+          <option value="">-- Select --</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+          <option value="Unknown">Unknown</option>
+          <option value="Not Applicable">NA</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="potential-automation">
+        Question 5: What is the POTENTIAL for Automation?</label>
+        <select id="potential-automation" required>
+          <option value="">-- Select --</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+          <option value="Unknown">Unknown</option>
+          <option value="Not Applicable">NA</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="pain-point">
+        Question 6: How painful is the current process?</label>
+        <select id="pain-point" required>
           <option value="">-- Select --</option>
           <option value="All Good">All Good</option>
           <option value="Room for Improvement">Room for Improvement</option>
@@ -84,25 +128,67 @@ Click on any shape in the diagram below to open the survey panel and record your
       </div>
       
       <div class="form-group">
-        <label for="Concern">Question 4: How concerned are you with modifying this task?</label>
-        <select id="Concern" required>
-          <option value="">-- Select --</option>
-          <option value="No Concern">No Concern</option>
-          <option value="Moderate Concern">Moderate Concern</option>
-          <option value="Terrified">Terrified</option>
-          <!-- <option value="Insufficient">Insufficient</option> -->
+        <label for="barriers">Question 7: Identify primary barriers to success and/or efficiency?</label>
+        <input type="text" id="barriers" name="barriers" ><br><br>
+      </div>
+      
+      <div class="form-group">
+        <label for="needs">Question 8: What is needed to address barriers and improve success and/or efficiency?</label>
+        <input type="text" id="needs" name="needs"><br><br>
         </select>
       </div>
       
       <div class="form-group">
-        <label for="Proficiency">Question 5: What is your level of proficiency with task automation?</label>
-        <select id="Proficiency" required>
+        <label for="pre-si-operating-model">
+        Question 9: What was the operating model BEFORE the PAM-SI (2023)?</label>
+        <select id="pre-si-operating-model"
+          name="pre-si-operating-model"
+          multiple
+          required
+          size="4">
           <option value="">-- Select --</option>
-          <option value="Very Low">Very Low</option>
-          <option value="Low">Low</option>
-          <option value="Medium">Medium</option>
-          <option value="Medium-Strong">Medium-Strong</option>
-          <option value="Strong">Strong</option>
+          <option value="Center-Run">center</option>
+          <option value="Regional Hub">regional</option>
+          <option value="National/Centralized">national</option>
+          <option value="Outsourced">Unknown</option>
+        </select>
+      </div>     
+      
+        <div class="form-group">
+        <label for="current-operating-model">
+        Question 10: What is the current operating model?</label>
+        <select id="current-operating-model"
+          name="current-operating-model"
+          multiple
+          required
+          size="4">
+          <option value="">-- Select --</option>
+          <option value="Center-Run">center</option>
+          <option value="Regional Hub">regional</option>
+          <option value="National/Centralized">national</option>
+          <option value="Outsourced">Unknown</option>
+        </select>
+      </div>
+      
+        <div class="form-group">
+        <label for="ideal-operating-model">
+        Question 11: What is the ideal operating model?</label>
+        <select id="ideal-operating-model"
+          name="ideal-operating-model"
+          multiple
+          required
+          size="4">
+          <option value="">-- Select --</option>
+          <option value="Center-Run">center</option>
+          <option value="Regional Hub">regional</option>
+          <option value="National/Centralized">national</option>
+          <option value="Outsourced">Unknown</option>
+        </select>
+      </div>
+      
+        <div class="form-group">
+        <label for="need-for-ideal-model">Question 12: What is needed achieve an ideal operating model?</label>
+        <input type="text" id="need-for-ideal-model" name="need-for-ideal-model"><br><br>
         </select>
       </div>
       

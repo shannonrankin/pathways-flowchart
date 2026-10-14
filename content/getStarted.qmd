@@ -2,13 +2,14 @@
 title: "Getting Started"
 format: html
 ---
+
 ## How To Use This Template
 
-This template will create a Github Repository standard folders and embedded flowcharts and the foundation for a Quarto website that can serve as a tool for navigating your Openscapes Pathways, a Lab Manual with embedded flowcharts, or as an experimental repository. 
+Use this template to create a copy of this repository for your own science center. Once you create your own version, you can then get to work!
 
 Follow the steps below to copy this template to your lab's GitHub
 
-1.  Open [this repository on GitHub]
+1.  Open \[this repository on GitHub\]
 
 2.  Click on the 'Use this template' button in the top right, select 'Create new repository'
 
@@ -16,15 +17,15 @@ Follow the steps below to copy this template to your lab's GitHub
 
 3.  Edit repository settings
 
-    -   Select the 'Include all branches' option
+    - Select the 'Include all branches' option
 
-    -   Select your lab organization or yourself as the owner and set the repository name to your ***Project Name***
+    - Select your lab organization or yourself as the owner and append the name with the initials of your science center (ex "\_SWFSC")
 
-    -   Make description "Research Compendium for ***Project Name***"
+    - Make description "PAM Workflows for ***Project Name***"
 
-    -   Make the repo public
+    - Make the repo public
 
-        ![](images/RepoSettings.png)
+      ![](images/RepoSettings.png)
 
 4.  Click create repository
 
@@ -34,30 +35,46 @@ Follow the steps below to copy this template to your lab's GitHub
 
 6.  Update 'Actions' settings
 
-    -   Under Settings -\> Actions -\> General -\> Actions permissions select 'Allow all actions and reusable workflows'. Select save
+    - Under Settings -\> Actions -\> General -\> Actions permissions select 'Allow all actions and reusable workflows'. Select save
 
-        ![](images/actions.png){width="323"}
+      ![](images/actions.png){width="323"}
 
-    -   Under Settings -\> Actions -\> General -\> Workflow permissions select 'Read and write permissions'
+    - Under Settings -\> Actions -\> General -\> Workflow permissions select 'Read and write permissions'
 
-        ![](images/workflowPermissions.png)
+      ![](images/workflowPermissions.png)
 
-        ::: callout-important
-        ## Note: Both of these settings may already be selected but you have to click save for both
-        :::
+      ::: callout-important
+      ## Note: Both of these settings may already be selected but you have to click save for both
+      :::
 
 7.  Return to the main page of the repo to edit your website
 
-    -   Click on 'Code' in the top left
+    - Click on 'Code' in the top left
 
-    -   Click on the settings button next to the 'About' section on the right side of the repository
+    - Click on the settings button next to the 'About' section on the right side of the repository
 
-    -   Select 'Use your GitHub Pages website'. This should autopopulate the website
+    - Select 'Use your GitHub Pages website'. This should autopopulate the website
 
-    -   Select 'Save Changes'
+    - Select 'Save Changes'
 
-        ![](images/website.png)
+      ![](images/website.png)
 
-8.  The foundation for your project is now created! We recommend that you first modify the ReadMe to add your Project Name in the appropriate places. 
+8.  The foundation for your project is now created! We recommend that you first modify the ReadMe to add your Project Name in the appropriate places.
 
+## Create Flowchart Pages for each Workflow
 
+You will need a separate flowchart page for each workflow:
+
+1.  Identify each workflow, and give it a simple name.
+
+2.  Create a copy of the content/flowchart.qmd for each workflow, and rename it by appending with the simplename. Use snake-case
+
+3.  Add this page name to the \_quarto.yml
+
+4.  Are there any changes that need to be made to the csv or other to ensure things do not overwrite each other???
+
+    1.  Change name for diagram from "PAM_workflow.svg" to the simplename of the specific workflow.
+
+        ![](images/workflow-tool-config.png)
+
+    2.  xx
